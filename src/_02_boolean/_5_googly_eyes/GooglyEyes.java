@@ -12,7 +12,7 @@ import processing.core.PImage;
  * 
  * 2. Declare a variable for the image:
  *    PImage face;
- * 
+ 
  * 3. In your setup() method, import your image using the following code:
  *    face = loadImage("face.jpg");
  * 
@@ -49,12 +49,13 @@ public class GooglyEyes extends PApplet {
     
     @Override
     public void setup() {
-
-    }
+    	face = loadImage("cat.jpg");
+    	setSize(500,500);
+;    }
 
     @Override
     public void draw() {
-
+    	ellipse()
     }
 
     static public void main(String[] args) {
