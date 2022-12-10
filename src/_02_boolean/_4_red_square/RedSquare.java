@@ -21,7 +21,9 @@ public class RedSquare {
 		// The && shown here means that both booleans must be true for the 
 		// entire if statement to be true. It is referred to as the "and"
 		// operator. 
-		
+		if(drewRedSquare == true|| drewBlueSquare == true) {
+			JOptionPane.showMessageDialog(null, "They drew a square in a pop-up");
+		}
 		
 		if(isRed && isSquare) {
 			drawRedSquare();
