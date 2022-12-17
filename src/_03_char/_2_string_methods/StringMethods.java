@@ -5,7 +5,8 @@ public class StringMethods {
 	public static void main(String[] args) {
 		
 		// 1. Create a String variable and initialize it to contain a minimum of 3 characters
-		String three = "abc";
+		String three = "aaaabc";
+		
 		// 2. Print the 3rd char of your String to the console.
 		//    HINT: .charAt
 		
@@ -26,6 +27,12 @@ public class StringMethods {
 		//    Print the char's position to the console.
 		//    EXAMPLE: if your string is "abc" and you are searching 
 		//             for char 'b', then print "b is at index 1"
+		for(int j = 0; j<three.length();j++) {
+			char a = three.charAt(j);
+			if(a == 'b') {
+				System.out.println("b is at index" + j);
+			}
+		}
 		
 	}
 }
